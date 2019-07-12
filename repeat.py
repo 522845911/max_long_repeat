@@ -357,7 +357,7 @@ def max_2_leter_repeat(seq):
 	res=[]
 	for j in product("ATCG",repeat=2):
 		rep="".join(j)
-		rest=re.findall(r'(('+rep+')+)',i)
+		rest=re.findall(r'(('+rep+')+)',seq)
 		#print aa
 		L_seq=[item[0] for item in rest]
 		res=res+L_seq
